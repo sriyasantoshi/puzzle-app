@@ -1,0 +1,286 @@
+.puzzle-submission-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive;
+}
+
+.submission-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.submission-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.submission-header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.submission-form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.submission-form h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-submit,
+.btn-reset {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #4ECDC4, #44A08D);
+  color: white;
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(78, 205, 196, 0.4);
+}
+
+.btn-reset {
+  background: #E0E0E0;
+  color: #333;
+}
+
+.btn-reset:hover {
+  background: #D0D0D0;
+  transform: translateY(-3px);
+}
+
+/* Submissions List */
+.submissions-list {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.submissions-list h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.submissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.submission-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.submission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.status-pending {
+  background: rgba(255, 193, 7, 0.8);
+  color: #333;
+}
+
+.status-approved {
+  background: rgba(76, 175, 80, 0.8);
+  color: white;
+}
+
+.status-reviewing {
+  background: rgba(33, 150, 243, 0.8);
+  color: white;
+}
+
+.card-description {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  opacity: 0.95;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.detail-value {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.card-meta {
+  margin-bottom: 12px;
+  opacity: 0.7;
+  font-size: 0.85em;
+}
+
+.btn-delete-submission {
+  width: 100%;
+  padding: 8px;
+  background: rgba(255, 107, 107, 0.8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-delete-submission:hover {
+  background: rgba(255, 107, 107, 1);
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .submission-header h1 {
+    font-size: 1.8em;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .submissions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .btn-submit,
+  .btn-reset {
+    width: 100%;
+    justify-content: center;
+  }
+}
